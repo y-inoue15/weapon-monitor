@@ -1,0 +1,25 @@
+<!-- templates/csv_management_tab.html -->
+<div id="csvManagementTab" class="tab-content p-6 hidden">
+    <!-- CSVデータ管理 -->
+    <h2 class="text-xl font-semibold mb-3">CSVデータ管理</h2>
+    <label for="viewCsvSelect" class="block mb-2">表示するCSV:</label>
+    <select id="viewCsvSelect" onchange="loadCSVData()" class="w-full p-2 border rounded"></select>
+
+    <div class="overflow-x-auto mt-4">
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border p-2">選択</th>
+                    <th class="border p-2">時刻</th>
+                    <th class="border p-2">復元ボーナス1</th>
+                    <th class="border p-2">復元ボーナス2</th>
+                    <th class="border p-2">復元ボーナス3</th>
+                    <th class="border p-2">復元ボーナス4</th>
+                    <th class="border p-2">復元ボーナス5</th>
+                </tr>
+            </thead>
+            <tbody id="csvTableBody"></tbody>
+        </table>
+    </div>
+    <button onclick="deleteSelectedRows()" class="mt-3 w-full bg-red-500 text-white p-2 rounded hover:bg-red-600">選択した行を削除</button>
+</div>

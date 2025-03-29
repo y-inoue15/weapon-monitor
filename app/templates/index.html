@@ -1,0 +1,11 @@
+<!-- templates/index.html -->
+{%- extends "layout.html" %}
+
+{%- block content %}
+    <!-- タブのナビゲーション部分 -->
+    {% include 'tabs.html' %}
+
+    <!-- タブのコンテンツ部分 -->
+    {% include 'monitoring_tab.html' %}
+    {% include 'csv_management_tab.html' %}
+{%- endblock %}
